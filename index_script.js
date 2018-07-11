@@ -1,5 +1,5 @@
 
-var sb = new Spacebrew.Client("parkjinseo8152.github.io","소방관","위치를 알려달라", 8080);
+var sb = new Spacebrew.Client();
 var man;
 var locations = [1,0,0,1,0,0,0,0,1,0];
 var x = [0,0,0,0,0,0,0,0,0,0];
@@ -12,6 +12,7 @@ function setup(){
     sb.name("소방관");
     sb.description("위치를 알려달라");
     sb.addSubscribe( "loc", "range" );
+    sb.connect();
     imageMode(CENTER);
     for(var i = 0; i<4; i++){
         x[i] = width/6;
