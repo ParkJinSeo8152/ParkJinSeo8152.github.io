@@ -1,5 +1,5 @@
 
-var sb = new Spacebrew.Client();
+var sb = new Spacebrew.Client("localhost","소방관","위치를 알려달라", 8080);
 var man;
 var locations = [1,0,0,1,0,0,0,0,1,0];
 var x = [0,0,0,0,0,0,0,0,0,0];
