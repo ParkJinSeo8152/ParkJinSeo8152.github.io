@@ -1,5 +1,5 @@
 
-var sb = new Spacebrew.Client();
+var sb = new Spacebrew.Client("parkjinseo8152.github.io");
 var man;
 var locations = [1,0,0,1,0,0,0,0,1,0];
 var x = [0,0,0,0,0,0,0,0,0,0];
